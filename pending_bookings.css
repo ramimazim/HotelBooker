@@ -1,0 +1,103 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9; /* Light background for contrast */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    padding: 20px; /* Add padding around the body */
+}
+
+.hoteldata {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px; /* Set a width for the hotel data */
+    margin-bottom: 20px; /* Space between sections */
+    text-align: left; /* Align text to the left */
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+label {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+    display: block; /* Make labels block for better spacing */
+}
+
+input[type="date"],
+input[type="radio"],
+select {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Full width minus padding and border */
+}
+
+input[type="radio"] {
+    width: auto; /* Make radio buttons inline */
+    margin-right: 5px;
+}
+
+.styled_select {
+    appearance: none; /* Remove default dropdown arrow */
+    background-color: white;
+    cursor: pointer;
+}
+
+p {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+.booking-form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 600px; /* Consistent width with hotel data */
+    text-align: center;
+}
+
+button, input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Make buttons full width */
+    margin-top: 20px; /* Add spacing above buttons */
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #e07b00; /* Darker orange on hover */
+}
+
+.booking-info {
+    margin-top: 20px;
+}
+
+.room-types {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Space them evenly */
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+.room-types input[type="radio"] {
+    margin-right: 5px; /* Space between radio buttons and labels */
+}

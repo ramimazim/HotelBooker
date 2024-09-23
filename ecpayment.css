@@ -1,0 +1,130 @@
+h1 {
+    padding: 5px;
+    margin: 10px;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('pexels-pixabay-38238.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+.form-container {
+    background-color: #ffffff;
+    width: 450px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #110a99;
+    box-shadow: 0 0 8px rgba(57, 15, 142, 0.3);
+    background-color: #fff;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    background-color: #e9e5ef;
+    color: rgb(27, 5, 52);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #110a99;
+    color: white;
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+
+input[type="submit"]:focus {
+    outline: none;
+    background-color: #3e20dc; /* Focus color */
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on focus */
+}
+
+.button-link {
+    background-color: #e9e5ef;
+    color: rgb(27, 5, 52);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none; /* Remove underline from link */
+}
+
+.button-link:hover {
+    background-color: #110a99;
+    color: white;
+    transform: scale(1.05);
+}
+
+.button-link:focus {
+    outline: none;
+    background-color: #3e20dc;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 10px;
+}

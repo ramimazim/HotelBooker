@@ -1,0 +1,111 @@
+/* General styling for the page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('pexels-vincent-gerbouin-445991-1174732.jpg');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: underline;
+    color: #333;
+}
+
+a:hover, a:focus {
+    color: #ddd;
+}
+
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+
+
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    font-family: "Poppins", sans-serif;
+}
+
+.tabs_label {
+    padding: 10px 16px;
+    cursor: pointer;  
+}
+
+.tabs_radio {
+    display: none;
+}
+
+.tabs_content {
+    order: 1;
+    width: 100%;
+    border-bottom: 3px solid #dddddd;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.tabs_radio:checked+.tabs_label {
+    font-weight: bold;
+    color: #009578;
+    border-bottom: 2px solid #009578;
+}
+
+.tabs_radio:checked+.tabs_label+.tabs_content{
+    display: initial;
+}
+
